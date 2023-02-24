@@ -1,0 +1,6 @@
+local vu = game:GetService('VirtualUser')
+game:GetService('Players').LocalPlayer.Idled:connect(function()
+    vu:CaptureController()
+    vu:ClickButton2(Vector2.new())
+end)
+
